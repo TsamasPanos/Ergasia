@@ -1,6 +1,65 @@
-<<<<<<< HEAD
-<head><title>My Page</title></head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A minimal HTML5 starter template" />
 
-=======
-<footer>
->>>>>>> feature-footer
+  <title>Your Page Title</title>
+  <link rel="icon" href="favicon.ico" />
+
+ 
+  <link rel="stylesheet" href="styles.css" />
+
+
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --text: #111;
+      --accent: #0077cc;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); }
+    .site { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    header, footer { padding: 1rem 0; }
+    nav ul { list-style: none; padding: 0; display:flex; gap:1rem; margin:0; }
+    a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <h1>Site Title</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <p>This is your HTML starter — replace this content with your own.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; <span id="year"></span> Your Name</small>
+    </footer>
+  </div>
+
+ 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    (function ready(fn){ if (document.readyState!='loading') fn(); else document.addEventListener('DOMContentLoaded', fn); })(function(){
+   
+      console.log('Starter template loaded');
+    });
+  </script>
+</body>
+</html>
+
